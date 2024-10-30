@@ -50,7 +50,7 @@ def cnn_classifier_page():
 
     # Load the model and class indices
     working_dir = os.path.dirname(os.path.abspath(__file__))
-    model_path = os.path.join(working_dir, "disease_prediction_model_V3.keras")
+    model_path = os.path.join(working_dir, "prediction_model_V3.keras")
     model = tf.keras.models.load_model(model_path)
     class_indices_path = os.path.join(working_dir, "class_indices1.json")
     class_indices = json.load(open(class_indices_path))
